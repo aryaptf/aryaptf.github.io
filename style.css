@@ -1,4 +1,9 @@
 /* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
 .navbar-brand {
     font-family: chivo;
     font-size: 32px;
@@ -13,6 +18,17 @@
     background-image: url(homebackground.png);
     background-size: cover;
     height: 500px;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
 }
 
 .jumbotron .display-2 {
@@ -27,11 +43,64 @@
     font-family: chivo;
 }
 
+/* About Me */
+.arput-aboutme-background {
+    background-image: url(aboutme.png);
+    background-size: cover;
+    height: 1080px;
+    position: relative;
+    margin-top: -32px;
+}
+
+.arput-aboutme {
+    background-color: white;
+    position: absolute;
+}
+
+.arput-aboutme-heading {
+    font-family: chivo;
+    color: #5AFF80;
+}
+
+.arput-aboutme-text {
+    justify-content: center;
+    text-align: center;
+    font-family: shippori mincho;
+    font-size: 40px;
+}
+
+.arput-aboutme-skill {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* My Expertise */
+.arput-expertise {
+    font-family: shippori mincho;
+    margin-top: 150px;
+}
+
+.arput-expertise-margin {
+    margin-top: 50px;
+}
+
+.arput-expertise-border {
+    border: 1px solid transparent;
+    background-color: #01FF56;
+    margin-left: 360px;
+    height: 300px;
+    width: 600px;
+}
+
 /* Utility */
-.tombol {
+.arput-tombol {
+    font-family: chivo;
     border-radius: 40px;
 }
 
+.arput-center {
+    text-align: center;
+}
 
 /* Desktop Version */
 @media (min-width: 992px) {
@@ -59,4 +128,22 @@
         margin-top: 200px;
         font-weight: 400;
     }
+
+    .arput-tombol-download {
+        font-family: chivo;
+        height: 60px;
+        width: 180px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        background-color: #01FF56;
+    }
+
+    .arput-aboutme {
+        background-color: white;
+        margin-top: 150px;
+        padding: 100px;
+    }
 }
+
