@@ -15,7 +15,7 @@
 
 /* Jumbotron */
 .jumbotron {
-    background-image: url(homebackground.png);
+    background-image: url(background.png);
     background-size: cover;
     height: 500px;
     position: relative;
@@ -24,16 +24,6 @@
 .jumbotron .container {
     position: relative;
     z-index: 1;
-}
-
-.jumbotron::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url(fotodiri1.png);
-    position: absolute;
-    bottom: 0;
 }
 
 .jumbotron .display-2 {
@@ -46,6 +36,19 @@
     font-size: 40px;
     font-weight: 400;
     font-family: chivo;
+}
+
+.foto {
+    width: 900px;
+    height: auto;
+    margin-left: -50px;
+}
+
+.container-fluids {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 100px;
+    margin-left: 200px;
 }
 
 /* About Me */
