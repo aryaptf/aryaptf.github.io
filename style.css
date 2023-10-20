@@ -21,12 +21,17 @@
     position: relative;
 }
 
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
 .jumbotron::after {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-image: url(fotodiri1.png);
     position: absolute;
     bottom: 0;
 }
@@ -53,43 +58,91 @@
 }
 
 .arput-aboutme {
-    background-color: white;
+    background-color: whitesmoke;
     position: absolute;
+    margin-top: -900px;
+    padding: 40px;
+}
+
+.arput-aboutme-padding {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .arput-aboutme-heading {
     font-family: chivo;
+    font-size: 20px;
     color: #5AFF80;
 }
 
 .arput-aboutme-text {
-    justify-content: center;
-    text-align: center;
     font-family: shippori mincho;
-    font-size: 40px;
+    font-size: 20px;
 }
 
-.arput-aboutme-skill {
+.arput-aboutme-interest {
     margin-top: 30px;
     margin-left: 30px;
 }
 
 /* My Expertise */
-.arput-expertise {
+.experience-top {
+    margin-top: 100px;
+}
+
+.section padding {
+    padding: 20px;
+}
+
+.section-tittle {
+    position: relative;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.section-tittle h2 {
+    font-family: "Shippori Mincho",serif;
+    font-size: 40px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 12px
+px
+;
+}
+
+.experience {
+    background: #01FF56;
+    padding: 60px 65px 20px 65px;
+    position: relative
+}
+
+.experience {
+    margin-bottom: 40px;
+}
+
+.experience::before {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    background: #fff;
+    content: "";
+    right: -15px;
+    top: 80px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.experience h2 {
     font-family: shippori mincho;
-    margin-top: 150px;
-}
-
-.arput-expertise-margin {
-    margin-top: 50px;
-}
-
-.arput-expertise-border {
-    border: 1px solid transparent;
-    background-color: #01FF56;
-    margin-left: 360px;
-    height: 300px;
-    width: 600px;
+    font-size: 20px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 37px
 }
 
 /* Utility */
@@ -98,8 +151,18 @@
     border-radius: 40px;
 }
 
+.arput-tombol-download {
+    font-family: chivo;
+    height: 60px;
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    background-color: #01FF56;
+}
+
 .arput-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 /* Desktop Version */
@@ -133,7 +196,6 @@
         font-family: chivo;
         height: 60px;
         width: 180px;
-        text-align: center;
         margin-top: 20px;
         margin-bottom: 30px;
         padding-top: 15px;
@@ -141,9 +203,26 @@
     }
 
     .arput-aboutme {
-        background-color: white;
-        margin-top: 150px;
+        margin-top: -900px;
         padding: 100px;
+    }
+
+    .arput-aboutme-padding {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+
+    .arput-aboutme-heading {
+        font-size: 20px;
+    }
+
+    .arput-aboutme-text {
+        font-family: shippori mincho;
+        font-size: 40px;
+    }
+
+    .experience h2 {
+        font-size:30px
     }
 }
 
