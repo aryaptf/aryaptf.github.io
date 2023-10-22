@@ -51,6 +51,8 @@
     margin-left: 200px;
 }
 
+
+
 /* About Me */
 .arput-aboutme-background {
     background-image: url(aboutme.png);
@@ -74,13 +76,13 @@
 
 .arput-aboutme-heading {
     font-family: chivo;
-    font-size: 20px;
+    font-size: 10px;
     color: #5AFF80;
 }
 
 .arput-aboutme-text {
     font-family: shippori mincho;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .arput-aboutme-interest {
@@ -90,61 +92,294 @@
 
 /* My Expertise */
 .experience-top {
-    margin-top: 100px;
-}
-
-.section padding {
-    padding: 20px;
+    margin-top: 120px;
 }
 
 .section-tittle {
     position: relative;
-}
-
-.mb-45 {
-    margin-bottom: 45px;
+    font-family: "Shippori Mincho",serif;
 }
 
 .section-tittle h2 {
-    font-family: "Shippori Mincho",serif;
+    font-size: 64px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.section-size1 {
+    font-size: 50px;
+}
+
+.section-size2 {
     font-size: 40px;
-    display: block;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 12px;
 }
 
-.experience {
-    background: #01FF56;
-    padding: 60px 65px 20px 65px;
-    position: relative;
+.section-size3 {
+    font-size: 30px;
 }
 
-.experience {
-    margin-bottom: 40px;
+.section-margin {
+    margin-top: 54px;
 }
 
-.experience::before {
+/* Experience */
+.arput-experiences {
+    margin-top: 144px;
+    text-align: center;
+}
+
+.arput-experiences h3 {
+    font-family: chivori;
+    font-size: 46px;
+    font-weight: 200;
+}
+
+.arput-experiences p {
+    font-family: chivo;
+    font-size: 18px;
+    color: #ACACAC;
+}
+
+/* Quotes */
+.arput-quotes {
+    background-color: #01FF56;
+}
+
+.arput-quotes-text {
+    font-family: chivo;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.arput-quotes-image {
+    width: 100%;
+} 
+
+/* Education */
+.arput-education-border {
+    background-color: #01FF56;
     position: absolute;
-    height: 27px;
-    width: 27px;
-    background: #fff;
-    content: "";
-    right: -15px;
-    top: 80px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg)
+    padding: 20px;
 }
 
-.experience h2 {
-    font-family: shippori mincho;
-    font-size: 20px;
-    display: block;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 37px
+.arput-website-button {
+    font-family: chivo;
+    background-color: #28a745;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
 }
+.arput-website-button:hover{
+    text-decoration: none;
+    background-color: #1a7352;
+    color: white;
+    transition-duration: 450ms;
+}
+
+/* Footer */
+.footer-wrappr {
+    background: #01FF56;
+}
+
+.footer-padding {
+    padding-top: 99px;
+    padding-bottom: 0;
+}
+
+.footer-wrappr .footer-tittle h4 {
+    font-family: "Chivo",sans-serif;
+    color: #150303;
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+.footer-wrappr .footer-tittle ul li {
+    margin-bottom: 6px
+}
+
+.footer-wrappr .footer-tittle ul li a {
+    color: #150303;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: underline transparent
+}
+
+.footer-wrappr .footer-tittle ul li a:hover {
+    text-decoration: underline;
+    color: #150303;
+    padding-left: 2px
+}
+
+.footer-wrappr .footer-tittle p {
+    color: #150303;
+    font-weight: 300
+}
+
+.footer-wrappr .form-wrapper input {
+    border: 0;
+    border-bottom: 1px solid rgba(21,3,3,0.4);
+    height: 50px;
+    width: 100%;
+    padding: 10px 0px;
+    padding-right: 25px;
+    padding-right: 30px;
+    color: #150303;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 0px;
+    background: none
+}
+
+.footer-wrappr .form-wrapper input::placeholder {
+    color: #150303
+}
+
+.footer-wrappr .form-wrapper input .list {
+    width: 100%;
+    border-radius: 0
+}
+
+.footer-wrappr .form-wrapper textarea {
+    color: #150303;
+    border: 0;
+    border-bottom: 1px solid rgba(21,3,3,0.4);
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    height: 76px;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 0px;
+    background: none
+}
+
+.footer-wrappr .form-wrapper textarea::placeholder {
+    color: #150303;
+    font-size: 16px;
+    font-weight: 300;
+    transition: .4s
+}
+
+.footer-wrappr .form-wrapper .contact {
+    border: 1px solid #eaedff;
+    padding: 40px 10px
+}
+
+.footer-wrappr .form-wrapper .contact i {
+    background: #8fb569;
+    font-size: 40px;
+    height: 150px;
+    width: 150px;
+    color: #ffffff;
+    border-radius: 50%;
+    line-height: 135px;
+    border: 10px solid #fff;
+    -webkit-box-shadow: 0px 16px 32px 0px rgba(206,226,255,0.4);
+    box-shadow: 0px 16px 32px 0px rgba(206,226,255,0.4);
+    margin-bottom: 30px
+}
+
+.footer-wrappr .form-wrapper .contact h3 {
+    font-size: 26px;
+    margin-bottom: 15px
+}
+
+.footer-wrappr .form-wrapper .contact p {
+    margin: 0;
+    padding: 0 50px
+}
+
+.footer-wrappr .form-wrapper input::-moz-placeholder,.footer-wrappr .form-wrapper input::-moz-placeholder {
+    color: #150303;
+    font-size: 16px;
+    font-weight: 300;
+    transition: .4s
+}
+
+.footer-wrappr .form-wrapper input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.footer-bottom-area .footer-border {
+    padding: 26px 0px
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer-bottom-area .footer-copy-right {
+        float:left
+    }
+}
+
+.footer-bottom-area .footer-copy-right p {
+    color: #150303;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 0px
+}
+
+.footer-bottom-area .footer-copy-right p i {
+    color: #150303
+}
+
+.footer-bottom-area .footer-copy-right p a {
+    color: #150303;
+    text-decoration: underline
+}
+
+.border-top {
+    border-top: 1px solid rgba(21,3,3,0.2) !important
+}
+
+.footer-social a {
+    color: #fff;
+    background: rgba(21,3,3,0.1);
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%
+}
+
+.footer-social a i {
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    display: inline-block;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg)
+}
+
+.footer-social a:hover {
+    color: #fff;
+    background: #150303
+}
+
+.footer-social a:hover i {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg)
+}
+
 
 /* Utility */
 .arput-tombol {
@@ -153,16 +388,54 @@
 
 .arput-tombol-download {
     font-family: chivo;
+    font-size: 20px;
     height: 60px;
     width: 180px;
     margin-top: 20px;
-    margin-bottom: 30px;
-    padding-top: 15px;
+    padding-top: 12px;
+    background-color: #01FF56;
+}
+
+.arput-tombol-gallery {
+    font-family: chivo;
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+    padding-top: 7px;
     background-color: #01FF56;
 }
 
 .arput-center {
     text-align: center !important;
+}
+
+.arput-margin-bottom {
+    margin-bottom: 72px;
+}
+
+.arput-margin-top {
+    margin-top: 72px;
+}
+
+.arput-padding-top {
+    padding-top: 96px;
+}
+
+.arput-vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.arput-pd-0 {
+    padding-left: 0;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }
 
 /* Desktop Version */
@@ -184,7 +457,7 @@
 
     .jumbotron {
         margin-top: -75px !important;
-        height: 900px;
+        height: 920px;
     }
 
     .jumbotron .display-2 {
@@ -193,7 +466,7 @@
     }
 
     .arput-tombol-hire {
-      font-family: chivo;
+        font-family: chivo;
         height: 60px;
         width: 180px;
         padding-top: 16px;
@@ -206,7 +479,7 @@
         width: 180px;
         margin-top: 20px;
         margin-bottom: 30px;
-        padding-top: 16px;
+        padding-top: 12px;
         background-color: #01FF56;
     }
 
@@ -216,21 +489,30 @@
     }
 
     .arput-aboutme-padding {
-        padding-right: 200px;
-        padding-left: 200px;
+        padding-right: 150px;
+        padding-left: 150px;
     }
 
     .arput-aboutme-heading {
         font-size: 20px;
+        margin-bottom: 30px;
     }
 
     .arput-aboutme-text {
         font-family: shippori mincho;
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .experience h2 {
         font-size:30px
+    }
+
+    .arput-experiences {
+        text-align: left;
+    }
+
+    .arput-experiences-khusus {
+        padding-top: 40px;
     }
 }
 
